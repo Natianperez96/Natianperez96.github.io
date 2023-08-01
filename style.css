@@ -1,0 +1,264 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+    
+body {
+    background: linear-gradient(to bottom, #a08b88, #28223f) no-repeat center center fixed;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navegacion {
+    width: 1000px;
+    margin: 30px auto;
+    background-color: #b6a19e;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+    padding: 0% 2%;
+    align-items: center;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #FFFF;
+}
+
+.menu li a:hover {
+    color: #dcb239;
+    background-color: #df744a;
+    transition: all 0.3s;
+}
+
+.submenu{
+    position: absolute;
+    background-color: #df744a;
+    color: #dcb239;
+    width: 120%;
+    visibility: hidden;
+    transition: opacity 1.5s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #dcb239;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #6bbaa7;
+    transition: all 0.3s;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+h1 {
+    font-size: 300%;
+    color: #fba100;
+    text-align: left;
+    padding: 0% 0% 0% 10%;
+    margin: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2.titulo {
+    font-family: cursive;
+    font-size: 300%;
+    color: #FFFF;
+    text-align: left;
+    font-weight: lighter;
+    padding: 8% 0% 0% 10%;
+    margin: auto;
+}
+
+
+button {
+    color: #dcb239;
+    background-color: #df744a;
+    display: flex;
+    justify-content: left;
+    padding: 0.5%;
+    margin: 3% 10% 0% 10%;
+    border-radius: 1px;
+    border-color: #dcb239;
+    font-size: 20px;
+}
+
+button:hover { 
+    background-color: #8fd8d2;
+}
+
+.especial {
+    color: #FFFF;
+    text-align: left;
+    padding: 0% 10% 0% 10%;
+}
+
+p.especial {
+    text-align: left;
+    font-weight: lighter;
+}
+
+
+table.tablacontacto {
+    width: 600px;
+    color:#6bbaa7;
+    margin: 6% 8% 0.5% 10%;
+    border-collapse: collapse;
+    text-align: center;
+    float: right;
+}
+
+.conborde {
+    border-left: solid 2px #dcb239; 
+}
+
+.tablacontacto > tr > th {
+    padding: 1%;
+}
+.tablacontacto > tr > td {
+    padding: 0.5%;
+    font-weight: lighter;    
+}
+
+h2 {
+    font-family: cursive;
+    text-align: center;
+    margin: 15% 15% 5% 15%;
+    color: rgb(235, 232, 232);
+    font-size: 300%;
+}
+
+p {
+    padding: 0% 10%;
+    text-align: center;
+    color: #fba100;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 30%;
+    margin: 3% 10% -5% 10%;
+    border-radius: 8px;
+    border: 4px;
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #6bbaa7;
+}
+
+table.expp {
+    padding: 3%;
+    border: solid 2px white;
+    border-collapse: collapse;
+    text-align: center;
+    width: 1000px;
+    margin: 6% 8% 0.5% 10%;
+}
+
+.expp th {
+    border: solid 2px #6bbaa7;
+    padding: 1%;
+    color: #fba100;
+}
+
+.expp td{
+    border: solid 2px #6bbaa7;
+    padding: 1%;
+    font-weight: lighter;
+    color: #dcb239;    
+}
+
+ul.listafinal {
+    list-style-type: disc;
+    color: #fba100;
+    margin: 0px 150px 150px 150px;
+}
+
+.final {
+    text-align: left;
+    padding: 0%;
+}
+
+.listafinal > li > a {
+    color: #6bbaa7;
+}
+
+.listafinal > li > a:hover {
+    color: #dcb239;
+    background-color: #df744a;
+    transition: all 0.3s;
+}
+
+form.formconsult {
+    margin: 0 auto 10% auto;
+    width: 600px;
+    padding: 1em;
+    border: solid 1px white;
+    border-radius: 1em;
+    color: #4a4365;
+    box-sizing: border-box;
+    background-color: #6bbaa7;
+}
+
+ul.listaformulario {
+    list-style-type: none;
+}
+
+textarea {
+    overflow: auto;
+    width: 500px;
+ }
+ 
+ .botonenvio {
+    color: #dcb239;
+    background-color: #df744a;
+    display: flex;
+    justify-content: left;
+    padding: 0.5%;
+    margin: 3% 10% 0% 10%;
+    border-radius: 1px;
+    border-color: #dcb239;
+    font-size: 20px;
+ }
+
+ .modif {
+    width: 500px;
+    overflow: auto;
+    padding: 0.5%;
+    margin: 0.8%;
+    transition: border 0.3s ease-in-out;
+ }
+
+ form input, form textarea, form select {
+    display: block;
+ }
+
+ a.volver {
+    float: right;
+    margin: 2% 10% 5% 10%;
+    color: #fba100;
+ }
+
+ 
